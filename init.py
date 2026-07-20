@@ -1,13 +1,6 @@
-from boot.bootloader import bootstrap
-from ui.main_window import GodOSWindow
-from PyQt6.QtWidgets import QApplication
-import sys
-def main():
-    app = QApplication(sys.argv)
-    app.setStyle("Fusion")
-    kernel = bootstrap()
-    window = GodOSWindow(kernel)
-    window.show()
-    sys.exit(app.exec())
-if __name__ == "__main__":
-    main()
+from .main_window import GodOSWindow
+from .god_terminal import GodTerminal
+from .prophecy_viewer import ProphecyViewer
+from .prayer_panel import PrayerPanel
+from .revelation_display import RevelationDisplay
+from .sacred_visualizer import SacredVisualizer
